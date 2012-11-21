@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ! end css reset --> */
+
+#header{
+  background: -moz-linear-gradient(top,  #4162e8, #452fc4);
+  background: -ms-linear-gradient(top,  #4162e8, #452fc4);
+  background: -o-linear-gradient(top,  #4162e8, #452fc4);
+  background: -webkit-linear-gradient(top, #4162e8, #452fc4);
+  background: -linear-gradient(top,  #4162e8, #452fc4);
+}
+
+#weather{
+	font-family: "quattrocento sans";
+	font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  list-style-type: none;
+}
+
+#weather li{
+  display: inline;
+  margin-left: 15px;
+  color: #CCC8CA;
+}
+
+#weather a{
+  color: #CCC8CA;
+  text-decoration: none;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzGXXtY2epNw97KNJ4KeIPSnNRYpqVyU_dP_MLkHj7360jftkyg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+
+#content{
+	font-color: #fff;
+  background: -webkit-linear-gradient(top, #a1e048, #6a942f);
+  padding: 20px
+
+}
+
+#content h1{
+  font-family: 'Tangerine';
+  font-size: 50px;
+  margin: 30px 40px;
+}
+
+#attributes li{
+  list-style-type: none;
+  padding-top: 70px;
+  margin-left: 120px;
+  font-family: 'Average Sans', sans-serif;
+  font-size: 20px;
+}
+
+#attributes img{
+  height: 60px;
+  position: absolute;
+  right: 260px;
+  clear: both;
+}
+
+img.about{
+  margin-top: -25px;
+}
+
+#test-list {
+  padding: 5px;
+  margin-bottom: 12px;
+}
+  
+#test-list li{
+  list-style-type: none;
+  display: inline;
+  margin-left: 20px;
+  padding: 20px;
+  font-family: "comic sans ms";
+}
+
+#test-list img{
+  height: 20px;
+  border: 1px solid #c6c9cc;
+}
