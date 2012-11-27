@@ -1,73 +1,36 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {    margin:0;    padding:0;    border:0;    outline:0;    font-size:100%;    vertical-align:baseline;    background:transparent;}body {    line-height:1;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {    display:block;}nav ul {    list-style:none;}blockquote, q {    quotes:none;}blockquote:before, blockquote:after,q:before, q:after {    content:'';    content:none;}a {    margin:0;    padding:0;    font-size:100%;    vertical-align:baseline;    background:transparent;}/* change colours to suit your needs */ins {    background-color:#ff9;    color:#000;    text-decoration:none;}/* change colours to suit your needs */mark {    background-color:#ff9;    color:#000;    font-style:italic;    font-weight:bold;}del {    text-decoration: line-through;}abbr[title], dfn[title] {    border-bottom:1px dotted;    cursor:help;}table {    border-collapse:collapse;    border-spacing:0;}/* change border colour to suit your needs */hr {    display:block;    height:1px;    border:0;    border-top:1px solid #cccccc;    margin:1em 0;    padding:0;}input, select {    vertical-align:middle;}
 
-/* ! end css reset --> */
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
 
 #header{
-  background: -moz-linear-gradient(top,  #4162e8, #452fc4);
-  background: -ms-linear-gradient(top,  #4162e8, #452fc4);
-  background: -o-linear-gradient(top,  #4162e8, #452fc4);
-  background: -webkit-linear-gradient(top, #4162e8, #452fc4);
-  background: -linear-gradient(top,  #4162e8, #452fc4);
+position: absolute;
+top: 0;
+background: #F3F1F1;
+width: 100%;
+box-shadow: 0px 4px 8px 0px #222;
 }
 
 #weather{
-	font-family: "quattrocento sans";
-	font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   list-style-type: none;
 }
 
 #weather li{
   display: inline;
-  margin-left: 15px;
-  color: #CCC8CA;
+  margin-left: 20px;
+  color: #444;
+  font-family: "quattrocento sans";
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #weather a{
-  color: #CCC8CA;
+  color: #444;
   text-decoration: none;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQzGXXtY2epNw97KNJ4KeIPSnNRYpqVyU_dP_MLkHj7360jftkyg');
   background-size: 20px;
@@ -75,52 +38,91 @@ table {
   padding-left: 25px;
 }
 
+#weather a:hover{
+  text-shadow: 0 0 3px #DEDEDE;
+}
+
 #content{
 	font-color: #fff;
-  background: -webkit-linear-gradient(top, #a1e048, #6a942f);
-  padding: 20px
+  padding: 20px;
+background: -moz-linear-gradient( top left, red, #c10000, #ae0000 );
 
+background: -webkit-linear-gradient( top left, red, #c10000, #ae0000 );
+
+background: -o-linear-gradient( top left, red, #c10000, #ae0000 );
+
+background: -khtml-linear-gradient( top left, red, #c10000, #ae0000 );
+
+background: -ms-linear-gradient( top left, red, #c10000, #ae0000 );
+
+background: linear-gradient( top left, red, #c10000, #ae0000 );
 }
 
 #content h1{
-  font-family: 'Tangerine';
+  text-align: center;
+  font-family: 'Happy Monkey';
+  text-shadow: 3px 0px 5px #222;
   font-size: 50px;
-  margin: 30px 40px;
+  margin: 150px 40px;
+}
+
+#attributes{
+  margin-top: 80px;
+}
+
+.header-text{
+  text-align: center;
+  padding: 0 20px 0 20px;
+  display: inline-block;
+  border-right: 2px dashed #000;
+  font-family: 'quattrocento sans';
+  font-size: 25px;
+  text-shadow: 1px 1px 1px #ccc;
+  font-weight: 500;
+  width: 180px;
+}
+
+.header-text:last-child{
+  border-right: hidden;
+}
+
+
+#attributes ul ul{
+  text-align: center;
 }
 
 #attributes li{
   list-style-type: none;
-  padding-top: 70px;
-  margin-left: 120px;
-  font-family: 'Average Sans', sans-serif;
-  font-size: 20px;
 }
 
 #attributes img{
   height: 60px;
-  position: absolute;
-  right: 260px;
-  clear: both;
+  -webkit-mask-image: -webkit-gradient(
+radial, 50% 50%, 40, 50% 50%, 90, from(#fff), to(rgba(0,0,0,0)));
 }
+
 
 img.about{
-  margin-top: -25px;
+  margin-top: 25px;
 }
 
-#test-list {
-  padding: 5px;
-  margin-bottom: 12px;
-}
-  
-#test-list li{
-  list-style-type: none;
-  display: inline;
-  margin-left: 20px;
-  padding: 20px;
-  font-family: "comic sans ms";
+#video{
+  margin-top: 10%;
+  text-align: center;
 }
 
-#test-list img{
-  height: 20px;
-  border: 1px solid #c6c9cc;
+#video figcaption{
+  color: #000;
+  font-size: 10px;
+  text-shadow: none;
+}
+
+
+#twitter-timeline{
+  float: left;
+  margin-left: 40px;
+}
+
+#linkbutton{
+  height: 40px;
 }
